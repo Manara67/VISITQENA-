@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Qena Crafts | عالم حرف قنا</title>
+    <style>
+        :root {
+            --bg: #050510;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --accent: #ffd700;
+            --text: #ffffff;
+        }
+
+        /* دعم الوضع الفاتح تلقائياً */
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #f0f2f5;
+                --card-bg: rgba(0, 0, 0, 0.05);
+                --accent: #b8860b;
+                --text: #1a1a3a;
+            }
+        }
+
+        body {
+            margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif;
+            background: var(--bg); color: var(--text); text-align: center;
+            transition: 0.5s;
+        }
+
+        .hero {
+            height: 50vh; display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+        }
+
+        h1 {
+            font-size: 3rem; margin: 0;
+            background: linear-gradient(90deg, #ffd700, #ff8c00);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px; padding: 40px; max-width: 1200px; margin: -50px auto 0;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            border-radius: 20px; padding: 30px;
+            backdrop-filter: blur(10px); transition: 0.4s;
+            cursor: pointer; text-decoration: none; display: block;
+            color: inherit;
+        }
+
+        .card:hover { 
+            border-color: #ffd700; 
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+        }
+
+        .card h3 { color: #ffd700; margin-top: 0; font-size: 1.6rem; }
+        .card p { font-size: 0.95rem; line-height: 1.6; opacity: 0.8; }
+        .click-hint { font-size: 0.8rem; color: #ffd700; margin-top: 15px; display: block; }
+
+        .btn-exit {
+            display: inline-block; margin: 40px 0; padding: 12px 35px;
+            border: 1px solid #ff4444; color: #ff4444;
+            text-decoration: none; border-radius: 50px; transition: 0.3s;
+        }
+
+        .btn-exit:hover { background: #ff4444; color: #fff; }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Welcome to the world of Qena crafts</h1>
+        <p style="opacity: 0.6; letter-spacing: 2px;">استكشف كنوز الصعيد اليدوية</p>
+    </div>
+
+    <div class="grid">
+        <a href="pottery.html" class="card">
+            <h3>الفخار القناوي</h3>
+            <p>سر "القلة" التي لا تجف، صناعة تعتمد على طمي النيل الممزوج بتاريخ قنا العريق.</p>
+            <span class="click-hint">اضغط لاستكشاف التفاصيل والصور ←</span>
+        </a>
+
+        <div class="card">
+            <h3>نسيج نقادة (الفركة)</h3>
+            <p>خيوط الحرير والقطن الملونة التي تُنسج يدوياً لتصدر لجميع أنحاء أفريقيا.</p>
+        </div>
+
+        <div class="card">
+            <h3>أخشاب السرسوع</h3>
+            <p>تحويل أخشاب الغابات المحلية إلى قطع فنية نادرة تدوم لآلاف السنين.</p>
+        </div>
+    </div>
+    
+    <a href="index.html" class="btn-exit">خروج آمن</a>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تراث فخار قنا | قصة الطين والماء</title>
+    <style>
+        :root {
+            --accent: #ffd700;
+            --bg-dark: #0a0a15;
+            --card-glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-dark); color: #fff; line-height: 1.8;
+            background-attachment: fixed;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+
+        h1 { 
+            color: var(--accent); text-align: center; font-size: 3.5rem; 
+            margin-bottom: 10px; text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .subtitle { text-align: center; color: #888; margin-bottom: 50px; font-size: 1.2rem; }
+
+        /* معرض الصور */
+        .gallery {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px; margin-bottom: 60px;
+        }
+        .gallery-item {
+            height: 350px; border-radius: 25px; overflow: hidden;
+            border: 1px solid rgba(255, 215, 0, 0.2); position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
+        .gallery-item:hover img { transform: scale(1.1) rotate(2deg); }
+        .gallery-item span {
+            position: absolute; bottom: 0; width: 100%;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+            padding: 20px; color: var(--accent); font-weight: bold;
+        }
+
+        /* تنسيق المحتوى النصي */
+        .section-box {
+            background: var(--card-glass); padding: 40px; border-radius: 30px;
+            border-right: 5px solid var(--accent); margin-bottom: 30px;
+            backdrop-filter: blur(10px); box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        h2 { color: var(--accent); border-bottom: 1px solid rgba(255, 215, 0, 0.1); padding-bottom: 10px; }
+        
+        .grid-info {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+        }
+
+        .highlight-list { list-style: none; padding: 0; }
+        .highlight-list li { margin-bottom: 15px; padding-right: 25px; position: relative; }
+        .highlight-list li::before {
+            content: "✦"; position: absolute; right: 0; color: var(--accent);
+        }
+
+        .location-tag {
+            display: inline-block; background: rgba(255, 215, 0, 0.1);
+            color: var(--accent); padding: 5px 15px; border-radius: 10px;
+            margin: 5px; font-size: 0.9rem; border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .nav-btns { text-align: center; margin-top: 60px; }
+        .back-btn {
+            text-decoration: none; color: var(--accent); border: 2px solid var(--accent);
+            padding: 15px 50px; border-radius: 50px; font-weight: bold;
+            transition: 0.4s; text-transform: uppercase;
+        }
+        .back-btn:hover { background: var(--accent); color: #000; box-shadow: 0 0 30px rgba(255, 215, 0, 0.4); }
+
+        /* تحسين العرض على الموبايل */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .grid-info { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>قصة الطين والماء</h1>
+        <p class="subtitle">تعد محافظة قنا واحدة من أهم مراكز صناعة الفخار في مصر، حيث تمزج هذه الحرفة بين الجغرافيا التاريخية ومهارة الأيدي العاملة.</p>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="./WhatsApp Image 2026-04-16 at 08.42.22.jpeg" alt="تشكيل الفخار">
+                <span>سر الدولاب اليدوي</span>
+            </div>
+            <div class="gallery-item">
+                <img src="./WhatsApp Image 2026-04-16 at 08.42.23 (1).jpeg" alt="القلل القناوية">
+                <span>القلة والزير: رموز قنا</span>
+            </div>
+            <div class="gallery-item">
+                <img src="WhatsApp Image 2026-04-16 at 08.42.23.jpeg" alt="الفاخورة">
+                <span>مرحلة الحرق في الفاخورة</span>
+            </div>
+        </div>
+
+        <div class="section-box">
+            <h2>تاريخ صناعة الفخار في قنا</h2>
+            <p>يعود تاريخ هذه الصناعة في قنا إلى <b>حضارة نقادة الأولى (4500-4000 قبل الميلاد)</b>. وقد استغل المصريون القدماء توافر "الطفلة" (الصخور الرسوبية) على ضفتي النيل، خاصة في مناطق وادي قنا وجبل السراي، لصناعة أدوات تخزين الطعام والماء. وتعد "القلة القناوية" و"الزير" من الرموز التاريخية التي لا تزال تُنتج بالأسلوب الفرعوني نفسه حتى اليوم.</p>
+        </div>
+
+        <div class="grid-info">
+            <div class="section-box">
+                <h2>مراحل وخطوات التصنيع</h2>
+                <ul class="highlight-list">
+                    <li><b>تحضير الطين:</b> خلط التربة الطينية والرملية والصحراوية مع الماء بنسب دقيقة.</li>
+                    <li><b>التشكيل بالدولاب:</b> استخدام القرص الدوار وتشكيل الطين يدوياً بمهارة فائقة.</li>
+                    <li><b>التجفيف:</b> ترك الأواني في الهواء الطلق وتحت أشعة الشمس لتتماسك.</li>
+                    <li><b>الحرق (الفرن):</b> وضع القطع في "الفاخورة" لضمان الصلابة والتحول لفخار متين.</li>
+                </ul>
+            </div>
+
+            <div class="section-box">
+                <h2>أشهر أماكن الصناعة في قنا</h2>
+                <p>تتوزع ورش الفخار في عدة قرى اشتهرت كقلاع لهذه الحرفة:</p>
+                <span class="location-tag">قرية المحروسة (البلاص)</span>
+                <span class="location-tag">قرية جراجوس (مصنع الخزف)</span>
+                <span class="location-tag">قرية الطويرات</span>
+                <span class="location-tag">قرية الشيخ علي</span>
+                <span class="location-tag">مركز نقادة</span>
+            </div>
+        </div>
+
+        <div class="section-box">
+            <h2>طرق البيع والتسويق</h2>
+            <p>تتنوع أساليب وصول الفخار القناوي للمستهلكين من البيع المباشر في الشوادر على الطرق الصحراوية، إلى التوزيع عبر التجار في مختلف المحافظات. كما تشارك المحافظة في المعارض القومية مثل <b>"تراثنا"</b>، بالإضافة إلى زيادة الطلب مؤخراً من الكافيهات والقرى السياحية على الأدوات الديكورية وأدوات الطهي المبتكرة.</p>
+        </div>
+
+        <div class="nav-btns">
+            <a href="welcome.html" class="back-btn">← العودة لمنصة الحرف</a>
+        </div>
+    </div>
+
+</body>
+</html>
